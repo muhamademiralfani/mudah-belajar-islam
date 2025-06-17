@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
     <style>
       body {
         font-family: "Poppins", sans-serif;
@@ -166,15 +170,10 @@
       >
         <!-- Logo & Brand -->
         <a href="#home" class="flex items-center space-x-3 group">
-          <div
-            class="w-12 h-12 rounded-full bg-gradient-to-tr from-orange-400 to-orange-600 flex items-center justify-center text-white font-bold text-xl shadow-lg group-hover:scale-105 transition"
-          >
-            <i class="fas fa-graduation-cap"></i>
+          <div class="w-12 h-12 rounded-full overflow-hidden flex items-center justify-center group-hover:scale-105 transition">
+            <img src="assets/logo.png" alt="MBI Logo" class="w-full h-full object-cover">
           </div>
-          <span
-            class="ml-2 text-2xl font-extrabold text-gray-800 tracking-tight group-hover:text-orange-500 transition"
-            >MBI</span
-          >
+          <span class="ml-2 text-2xl font-extrabold text-gray-800 tracking-tight group-hover:text-orange-500 transition">MBI</span>
         </a>
         <!-- Desktop Menu -->
         <div class="hidden md:flex items-center space-x-8">
@@ -277,45 +276,55 @@
     <!-- Keunggulan Section -->
     <section class="py-16 bg-gray-50 animate-fadeIn delay-200">
       <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-12">
-          Mengapa Memilih
-          <span class="text-orange-500">Mudah Belajar Islam</span>?
-        </h2>
-        <div class="grid md:grid-cols-3 gap-8">
-          <div class="bg-white p-8 rounded-xl shadow-sm text-center">
-            <div
-              class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6"
-            >
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-3xl font-bold mb-4">
+            Mengapa Memilih <span class="text-orange-500">Mudah Belajar Islam</span>?
+          </h2>
+          <p class="text-gray-600">Temukan kemudahan dan keunggulan belajar bersama kami</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Keunggulan 1 -->
+          <div class="bg-white p-8 rounded-xl shadow-sm text-center hover:shadow-md transition-shadow duration-300">
+            <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
               <i class="fas fa-book-open text-orange-500 text-2xl"></i>
             </div>
-            <h3 class="text-xl font-semibold mb-3">Belajar dari Nol</h3>
-            <p class="text-gray-600">
-              Metode pembelajaran dimulai dari dasar, cocok untuk pemula tanpa
-              pengetahuan sebelumnya.
+            <h3 class="text-xl font-semibold mb-4">Belajar dari Nol</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Metode pembelajaran sistematis dimulai dari dasar, menjadikan pemula mampu memahami dengan mudah.
             </p>
           </div>
-          <div class="bg-white p-8 rounded-xl shadow-sm text-center">
-            <div
-              class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6"
-            >
+
+          <!-- Keunggulan 2 -->
+          <div class="bg-white p-8 rounded-xl shadow-sm text-center hover:shadow-md transition-shadow duration-300">
+            <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
               <i class="fas fa-user-graduate text-orange-500 text-2xl"></i>
             </div>
-            <h3 class="text-xl font-semibold mb-3">Pengajar Berpengalaman</h3>
-            <p class="text-gray-600">
-              Dibimbing oleh ustadz/ustadzah yang kompeten dan memiliki
-              pengalaman mengajar.
+            <h3 class="text-xl font-semibold mb-4">Pengajar Berpengalaman</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Dibimbing langsung oleh ustadz/ustadzah berpengalaman dengan metode mengajar terbaik.
             </p>
           </div>
-          <div class="bg-white p-8 rounded-xl shadow-sm text-center">
-            <div
-              class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6"
-            >
+
+          <!-- Keunggulan 3 -->
+          <div class="bg-white p-8 rounded-xl shadow-sm text-center hover:shadow-md transition-shadow duration-300">
+            <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
               <i class="fas fa-laptop text-orange-500 text-2xl"></i>
             </div>
-            <h3 class="text-xl font-semibold mb-3">Fleksibel & Online</h3>
-            <p class="text-gray-600">
-              Belajar kapan saja dan dimana saja melalui platform online yang
-              mudah diakses.
+            <h3 class="text-xl font-semibold mb-4">Offline & Online</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Fleksibilitas belajar dengan pilihan kelas tatap muka atau online melalui Zoom dan WhatsApp.
+            </p>
+          </div>
+
+          <!-- Keunggulan 4 -->
+          <div class="bg-white p-8 rounded-xl shadow-sm text-center hover:shadow-md transition-shadow duration-300">
+            <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i class="fas fa-lightbulb text-orange-500 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Mudah Dipahami</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Materi disajikan dengan bahasa sederhana dan contoh praktis dalam kehidupan sehari-hari.
             </p>
           </div>
         </div>
@@ -395,31 +404,36 @@
           </div>
 
           <!-- Program 3 -->
-          <div
-            class="program-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300"
-          >
+          <div class="program-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300">
             <div class="h-48 bg-orange-100 flex items-center justify-center">
               <i class="fas fa-mosque text-orange-500 text-6xl"></i>
             </div>
             <div class="p-6">
-              <h3 class="text-xl font-bold mb-3">Ilmu Dasar Islam</h3>
+              <h3 class="text-xl font-bold mb-3">Dirosah Islamiyyah</h3>
               <p class="text-gray-600 mb-4">
-                Pahami pokok-pokok agama Islam mulai dari aqidah, fiqh, hingga
-                akhlak.
+                  Program komprehensif untuk memahami dasar-dasar agama Islam secara sistematis dan mendalam.
               </p>
               <ul class="space-y-2">
-                <li class="flex items-center">
-                  <i class="fas fa-check text-orange-500 mr-2"></i>
-                  <span>Aqidah yang benar</span>
-                </li>
-                <li class="flex items-center">
-                  <i class="fas fa-check text-orange-500 mr-2"></i>
-                  <span>Fiqh ibadah sehari-hari</span>
-                </li>
-                <li class="flex items-center">
-                  <i class="fas fa-check text-orange-500 mr-2"></i>
-                  <span>Pembinaan akhlak mulia</span>
-                </li>
+                  <li class="flex items-center">
+                      <i class="fas fa-check text-orange-500 mr-2"></i>
+                      <span>Aqidah (Pondasi Keimanan)</span>
+                  </li>
+                  <li class="flex items-center">
+                      <i class="fas fa-check text-orange-500 mr-2"></i>
+                      <span>Hadis (Kajian Sunnah Nabi)</span>
+                  </li>
+                  <li class="flex items-center">
+                      <i class="fas fa-check text-orange-500 mr-2"></i>
+                      <span>Akhlak & Adab (Etika Islam)</span>
+                  </li>
+                  <li class="flex items-center">
+                      <i class="fas fa-check text-orange-500 mr-2"></i>
+                      <span>Shiroh (Sejarah Islam)</span>
+                  </li>
+                  <li class="flex items-center">
+                      <i class="fas fa-check text-orange-500 mr-2"></i>
+                      <span>Fiqih (Hukum Islam)</span>
+                  </li>
               </ul>
             </div>
           </div>
@@ -457,10 +471,9 @@
                     class="testimonial-card bg-white p-6 rounded-xl shadow-sm"
                   >
                     <div class="flex items-center mb-4">
-                      <img
-                        src="https://randomuser.me/api/portraits/men/1.jpg"
-                        class="w-12 h-12 rounded-full object-cover"
-                      />
+                      <div class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center">
+                          <i class="fas fa-user-circle text-orange-500 text-2xl"></i>
+                      </div>
                       <div class="ml-4">
                         <h4 class="font-semibold">Ahmad Fauzi</h4>
                         <p class="text-sm text-gray-500">Mahasiswa, 22 tahun</p>
@@ -481,10 +494,9 @@
                     class="testimonial-card bg-white p-6 rounded-xl shadow-sm"
                   >
                     <div class="flex items-center mb-4">
-                      <img
-                        src="https://randomuser.me/api/portraits/women/1.jpg"
-                        class="w-12 h-12 rounded-full object-cover"
-                      />
+                      <div class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center">
+                          <i class="fas fa-user-circle text-orange-500 text-2xl"></i>
+                      </div>
                       <div class="ml-4">
                         <h4 class="font-semibold">Siti Rahma</h4>
                         <p class="text-sm text-gray-500">
@@ -507,10 +519,9 @@
                     class="testimonial-card bg-white p-6 rounded-xl shadow-sm"
                   >
                     <div class="flex items-center mb-4">
-                      <img
-                        src="https://randomuser.me/api/portraits/men/2.jpg"
-                        class="w-12 h-12 rounded-full object-cover"
-                      />
+                      <div class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center">
+                          <i class="fas fa-user-circle text-orange-500 text-2xl"></i>
+                      </div>
                       <div class="ml-4">
                         <h4 class="font-semibold">Budi Santoso</h4>
                         <p class="text-sm text-gray-500">
@@ -538,10 +549,9 @@
                     class="testimonial-card bg-white p-6 rounded-xl shadow-sm"
                   >
                     <div class="flex items-center mb-4">
-                      <img
-                        src="https://randomuser.me/api/portraits/women/2.jpg"
-                        class="w-12 h-12 rounded-full object-cover"
-                      />
+                      <div class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center">
+                          <i class="fas fa-user-circle text-orange-500 text-2xl"></i>
+                      </div>
                       <div class="ml-4">
                         <h4 class="font-semibold">Anisa Putri</h4>
                         <p class="text-sm text-gray-500">Guru, 29 tahun</p>
@@ -562,10 +572,9 @@
                     class="testimonial-card bg-white p-6 rounded-xl shadow-sm"
                   >
                     <div class="flex items-center mb-4">
-                      <img
-                        src="https://randomuser.me/api/portraits/men/3.jpg"
-                        class="w-12 h-12 rounded-full object-cover"
-                      />
+                      <div class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center">
+                          <i class="fas fa-user-circle text-orange-500 text-2xl"></i>
+                      </div>
                       <div class="ml-4">
                         <h4 class="font-semibold">Ridwan Hakim</h4>
                         <p class="text-sm text-gray-500">Pengusaha, 40 tahun</p>
@@ -586,10 +595,9 @@
                     class="testimonial-card bg-white p-6 rounded-xl shadow-sm"
                   >
                     <div class="flex items-center mb-4">
-                      <img
-                        src="https://randomuser.me/api/portraits/women/3.jpg"
-                        class="w-12 h-12 rounded-full object-cover"
-                      />
+                      <div class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center">
+                          <i class="fas fa-user-circle text-orange-500 text-2xl"></i>
+                      </div>
                       <div class="ml-4">
                         <h4 class="font-semibold">Fatima Zahra</h4>
                         <p class="text-sm text-gray-500">Mahasiswi, 21 tahun</p>
@@ -613,10 +621,9 @@
                 <div class="grid md:grid-cols-3 gap-6">
                   <div class="testimonial-card bg-white p-6 rounded-xl shadow-sm">
                     <div class="flex items-center mb-4">
-                      <img
-                        src="https://randomuser.me/api/portraits/women/4.jpg"
-                        class="w-12 h-12 rounded-full object-cover"
-                      />
+                      <div class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center">
+                          <i class="fas fa-user-circle text-orange-500 text-2xl"></i>
+                      </div>
                       <div class="ml-4">
                         <h4 class="font-semibold">Nurul Hidayah</h4>
                         <p class="text-sm text-gray-500">Dokter, 32 tahun</p>
@@ -635,10 +642,9 @@
 
                   <div class="testimonial-card bg-white p-6 rounded-xl shadow-sm">
                     <div class="flex items-center mb-4">
-                      <img
-                        src="https://randomuser.me/api/portraits/men/4.jpg"
-                        class="w-12 h-12 rounded-full object-cover"
-                      />
+                      <div class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center">
+                          <i class="fas fa-user-circle text-orange-500 text-2xl"></i>
+                      </div>
                       <div class="ml-4">
                         <h4 class="font-semibold">Muhammad Arif</h4>
                         <p class="text-sm text-gray-500">Programmer, 27 tahun</p>
@@ -657,10 +663,9 @@
 
                   <div class="testimonial-card bg-white p-6 rounded-xl shadow-sm">
                     <div class="flex items-center mb-4">
-                      <img
-                        src="https://randomuser.me/api/portraits/women/5.jpg"
-                        class="w-12 h-12 rounded-full object-cover"
-                      />
+                      <div class="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center">
+                          <i class="fas fa-user-circle text-orange-500 text-2xl"></i>
+                      </div>
                       <div class="ml-4">
                         <h4 class="font-semibold">Aisyah Rahman</h4>
                         <p class="text-sm text-gray-500">Wiraswasta, 30 tahun</p>
@@ -907,43 +912,30 @@
           <!-- Brand Column -->
           <div class="col-span-1">
             <div class="flex items-center mb-6">
-              <div
-                class="w-12 h-12 rounded-full bg-orange-500 flex items-center justify-center text-white font-bold text-xl"
-              >
-                MBI
+              <div class="w-12 h-12 bg-white rounded-full overflow-hidden flex items-center justify-center">
+                <img src="assets/logo.png" alt="MBI Logo" class="w-10 h-10 object-contain">
               </div>
-              <span class="ml-3 text-xl font-semibold"
-                >Mudah Belajar Islam</span
-              >
+              <div class="ml-3">
+                <span class="text-xl font-semibold text-white">Mudah</span>
+                <span class="text-xl font-semibold text-orange-500">Belajar</span>
+              </div>
             </div>
-            <p class="text-gray-400 mb-6">
+            <p class="text-gray-300 mb-6 leading-relaxed">
               Platform pembelajaran online untuk menguasai Bahasa Arab, membaca
               Al-Qur'an, dan memahami dasar-dasar Islam.
             </p>
             <!-- Social Media -->
             <div class="flex space-x-4">
-              <a
-                href="#"
-                class="w-10 h-10 rounded-full bg-gray-800 hover:bg-orange-500 flex items-center justify-center transition duration-300"
-              >
+              <a href="#" class="w-10 h-10 rounded-full bg-orange-500 hover:bg-orange-600 flex items-center justify-center transition duration-300">
                 <i class="fab fa-instagram"></i>
               </a>
-              <a
-                href="#"
-                class="w-10 h-10 rounded-full bg-gray-800 hover:bg-orange-500 flex items-center justify-center transition duration-300"
-              >
+              <a href="#" class="w-10 h-10 rounded-full bg-orange-500 hover:bg-orange-600 flex items-center justify-center transition duration-300">
                 <i class="fab fa-facebook-f"></i>
               </a>
-              <a
-                href="#"
-                class="w-10 h-10 rounded-full bg-gray-800 hover:bg-orange-500 flex items-center justify-center transition duration-300"
-              >
+              <a href="#" class="w-10 h-10 rounded-full bg-orange-500 hover:bg-orange-600 flex items-center justify-center transition duration-300">
                 <i class="fab fa-youtube"></i>
               </a>
-              <a
-                href="#"
-                class="w-10 h-10 rounded-full bg-gray-800 hover:bg-orange-500 flex items-center justify-center transition duration-300"
-              >
+              <a href="#" class="w-10 h-10 rounded-full bg-orange-500 hover:bg-orange-600 flex items-center justify-center transition duration-300">
                 <i class="fab fa-telegram-plane"></i>
               </a>
             </div>
@@ -951,33 +943,33 @@
 
           <!-- Programs Column -->
           <div class="col-span-1">
-            <h3 class="text-lg font-semibold mb-6">Program Kami</h3>
+            <h3 class="text-lg font-semibold mb-6 text-white">Program Kami</h3>
             <ul class="space-y-3">
               <li>
                 <a
                   href="#"
-                  class="text-gray-400 hover:text-orange-500 transition duration-300"
+                  class="text-gray-300 hover:text-orange-500 transition duration-300"
                   >Bahasa Arab Dasar</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="text-gray-400 hover:text-orange-500 transition duration-300"
+                  class="text-gray-300 hover:text-orange-500 transition duration-300"
                   >Tahsin Al-Qur'an</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="text-gray-400 hover:text-orange-500 transition duration-300"
+                  class="text-gray-300 hover:text-orange-500 transition duration-300"
                   >Ilmu Dasar Islam</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="text-gray-400 hover:text-orange-500 transition duration-300"
+                  class="text-gray-300 hover:text-orange-500 transition duration-300"
                   >Paket Lengkap</a
                 >
               </li>
@@ -986,47 +978,53 @@
 
           <!-- Contact Column -->
           <div class="col-span-1">
-            <h3 class="text-lg font-semibold mb-6">Hubungi Kami</h3>
+            <h3 class="text-lg font-semibold mb-6 text-white">Hubungi Kami</h3>
             <ul class="space-y-4">
               <li class="flex items-center">
                 <i class="fas fa-phone-alt text-orange-500 mr-3"></i>
-                <span class="text-gray-400">+62 812 3456 7890</span>
+                <span class="text-gray-300">+62 812 3456 7890</span>
               </li>
               <li class="flex items-center">
                 <i class="fas fa-envelope text-orange-500 mr-3"></i>
-                <span class="text-gray-400">info@mudahbelajarislam.com</span>
+                <span class="text-gray-300">info@mudahbelajarislam.com</span>
               </li>
             </ul>
           </div>
 
           <!-- Payment Column -->
           <div class="col-span-1">
-            <h3 class="text-lg font-semibold mb-6">Metode Pembayaran</h3>
-            <div class="grid grid-cols-3 gap-3">
-              <div
-                class="bg-gray-800 rounded p-3 flex items-center justify-center hover:bg-gray-700 transition duration-300"
-              >
-                <i class="fab fa-cc-visa text-xl"></i>
-              </div>
-              <div
-                class="bg-gray-800 rounded p-3 flex items-center justify-center hover:bg-gray-700 transition duration-300"
-              >
-                <i class="fab fa-cc-mastercard text-xl"></i>
-              </div>
-              <div
-                class="bg-gray-800 rounded p-3 flex items-center justify-center hover:bg-gray-700 transition duration-300"
-              >
-                <i class="fas fa-university text-lg"></i>
-              </div>
+            <h3 class="text-lg font-semibold mb-6 text-white">Metode Pembayaran</h3>
+            <div class="grid grid-cols-2 gap-3">
+                <!-- DANA -->
+                <div class="bg-white rounded p-3 flex items-center justify-center hover:bg-gray-100 transition duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Logo_dana_blue.svg" 
+                         alt="DANA" 
+                         class="h-6 object-contain">
+                </div>
+                <!-- OVO -->
+                <div class="bg-white rounded p-3 flex items-center justify-center hover:bg-gray-100 transition duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Logo_ovo_purple.svg" 
+                         alt="OVO" 
+                         class="h-6 object-contain">
+                </div>
+                <!-- GOPAY -->
+                <div class="bg-white rounded p-3 flex items-center justify-center hover:bg-gray-100 transition duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Gopay_logo.svg" 
+                         alt="GOPAY" 
+                         class="h-6 object-contain">
+                </div>
+                <!-- Bank Transfer -->
+                <div class="bg-white rounded p-3 flex items-center justify-center hover:bg-gray-100 transition duration-300">
+                    <i class="fas fa-university text-lg text-gray-800 mr-2"></i>
+                    <span class="font-medium text-gray-800">BANK</span>
+                </div>
             </div>
           </div>
         </div>
 
         <!-- Copyright -->
         <div class="border-t border-gray-800 mt-12 pt-8 text-center">
-          <p class="text-gray-400">
-            &copy; 2025 Mudah Belajar Islam. All rights reserved.
-          </p>
+          <p class="text-gray-400">&copy; 2025 Mudah Belajar Islam. All rights reserved.</p>
         </div>
       </div>
     </footer>
